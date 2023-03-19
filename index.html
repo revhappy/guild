@@ -9,68 +9,70 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
         }
 
         .header {
             background-color: #333;
-            padding: 10px;
-            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
             color: white;
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .hero {
+            background-color: #f5f5f5;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
             font-size: 24px;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-
-        .left-sidebar, .main-content, .right-sidebar {
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .left-sidebar, .right-sidebar {
-            width: 25%;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-content {
-            width: 50%;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        h1 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 14px;
+        .cta-button {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        Website Title
-    </div>
-    <div class="container">
-        <div class="left-sidebar">
-            <h1>Left Sidebar</h1>
-            <p>Content for the left sidebar goes here.</p>
-        </div>
-        <div class="main-content">
-            <img src="https://i.imgur.com/ssGn4Z8.png" alt="Main Content Image">
-        </div>
-        <div class="right-sidebar">
-            <h1>Right Sidebar</h1>
-            <p>Content for the right sidebar goes here.</p>
-        </div>
-    </div>
+    <header class="header">
+        <h1>Logo</h1>
+        <nav class="nav">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to Our Website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
 </body>
 </html>
