@@ -12,7 +12,7 @@
         }
 
         .header {
-            background-color: #333;
+            background-color: #f8f9fa;
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -20,7 +20,7 @@
         }
 
         .header h1 {
-            color: white;
+            color: #222;
             margin: 0;
         }
 
@@ -29,72 +29,46 @@
         }
 
         .nav a {
-            color: white;
+            color: #222;
             text-decoration: none;
             padding: 0 10px;
         }
 
         .nav a:hover {
-            color: #0074e8;
+            text-decoration: underline;
         }
 
         .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             padding: 20px;
-        }
-
-        .article {
-            width: 30%;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        .article img {
-            max-width: 100%;
-            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .article h2 {
             font-size: 24px;
-            margin: 10px 0;
+            margin: 20px 0 10px;
         }
 
         .article p {
             font-size: 14px;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Logo</h1>
+        <h1>Wikipedia</h1>
         <nav class="nav">
-            <a href="#">World</a>
-            <a href="#">US</a>
-            <a href="#">Politics</a>
-            <a href="#">Business</a>
-            <a href="#">Entertainment</a>
+            <a href="#">Main Page</a>
+            <a href="#">Contents</a>
+            <a href="#">Current Events</a>
         </nav>
     </header>
     <div class="main-content">
         <div class="article">
-            <img src="https://via.placeholder.com/300x150" alt="Article Image">
-            <h2>Article Title 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="article">
-            <img src="https://via.placeholder.com/300x150" alt="Article Image">
-            <h2>Article Title 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="article">
-            <img src="https://via.placeholder.com/300x150" alt="Article Image">
-            <h2>Article Title 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>Branford Steam Railroad</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere mi et lacus semper, nec facilisis ipsum sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor lorem a libero pellentesque, non porttitor odio dictum. Aliquam erat volutpat. Mauris venenatis lacus ac dui suscipit cursus.</p>
+            <p>Suspendisse potenti. Sed volutpat varius quam, eu fermentum risus vestibulum vel. Pellentesque vehicula quam in lacinia vulputate. Integer at velit sem. Duis eget lorem et lacus venenatis vulputate id id neque. Sed orci justo, sagittis eu cursus at, dignissim vitae libero. Suspendisse et nulla sem. Quisque vehicula semper odio. Integer in ullamcorper turpis, at fermentum sapien.</p>
         </div>
     </div>
 </body>
